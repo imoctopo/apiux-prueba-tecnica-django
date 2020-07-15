@@ -14,7 +14,7 @@ def create_books(request):
     book = book_serializers.CreateBookSerializer(data=request.data)
     if book.is_valid():
         author_id = book.validated_data['author_id']
-        author = author_dao.get_author(author_id) or author_dao.create_fake_author()  # Returns an autor's instance or create a new one and returns its instance
+        author = author_dao.get_author(author_id) or author_dao.create_fake_author()  # Returns an author's instance or create a new one and returns its instance
         book.validated_data['author_id'] = author.pk
         book.save()
         return Response({
