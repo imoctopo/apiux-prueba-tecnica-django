@@ -1,3 +1,4 @@
 django==2.2.14
 djangorestframework
-httpie # Para realizar llamadas a la API
+httpie # Realizar llamadas a la API
+Faker # Generar autores con datos falsos
