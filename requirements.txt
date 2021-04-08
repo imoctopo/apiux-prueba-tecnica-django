@@ -1,4 +1,4 @@
-django==2.2.14
+django==2.2.20
 djangorestframework
 httpie # Realizar llamadas a la API (development)
 Faker # Generar autores con datos falsos
